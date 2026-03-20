@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-t="title-contact">YUNESS MIND | Contact</title>
+    <meta name="description" content="Contactez YUNESS MIND pour vos projets vidéo.">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style-gothic.css">
+</head>
+<body class="dark-theme">
+    <!-- Page Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">YUNESS MIND<span class="dot">.</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Parallax Background -->
+    <div class="parallax-container" aria-hidden="true">
+        <div class="parallax-layer parallax-dots" data-parallax="0.2"></div>
+        <div class="parallax-layer parallax-grid" data-parallax="0.5"></div>
+    </div>
+
+    <a href="#main-content" class="skip-link">Passer au contenu</a>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="Accueil YUNESS MIND">YUNESS MIND<span class="dot">.</span></a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="work.html" class="nav-link">Projets</a></li>
+                <li><a href="about.html" class="nav-link">À Propos</a></li>
+                <li><a href="contact.html" class="nav-link btn-secondary active">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" type="button">
+                <svg class="sun-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">
+                <span class="menu-icon"><span></span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Contact Hero -->
+        <section class="contact-hero section-animated">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-content">
+                        <span class="badge">Contact</span>
+                        <h1 class="hero-title">Parlons de votre <span class="text-gradient">Projet</span></h1>
+                        <p class="hero-subtitle">
+                            Prêt à donner vie à vos idées ? Contactez-moi pour discuter de votre projet et voir comment nous pouvons collaborer.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span>hello@YUNESS MIND.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Paris, France</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>+33 6 XX XX XX XX</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Twitter">TW</a>
+                            <a href="#" aria-label="Instagram">IG</a>
+                            <a href="#" aria-label="LinkedIn">LN</a>
+                            <a href="#" aria-label="YouTube">YT</a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="project">Type de Projet</label>
+                                <select id="project" name="project" required>
+                                    <option value="">Sélectionnez...</option>
+                                    <option value="montage">Montage Vidéo</option>
+                                    <option value="motion">Motion Design</option>
+                                    <option value="etalonnage">Étalonnage</option>
+                                    <option value="social">Contenu Réseaux Sociaux</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary btn-full">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 YUNESS MIND. Conçu avec précision.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="GitHub">GH</a>
+                    <a href="#" aria-label="LinkedIn">LN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
